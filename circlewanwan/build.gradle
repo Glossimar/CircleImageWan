@@ -33,9 +33,9 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
-version = "1.0.2"
+version = "1.0.3"
 
-def siteUrl = 'https://github.com/SunWanQi/CircleImageWan' // 项目主页。
+def siteUrl = 'https://github.com/SunWanQi/CircleImageWan'
 def gitUrl = 'git@github.com:SunWanQi/CircleImageWan.git'
 
 group = "com.GlossimarWanWan"
@@ -46,12 +46,11 @@ install {
         pom {
             project {
                 packaging 'aar'
-                // 项目描述，复制我的话，这里需要修改。
-                name 'CircleImageView'// 可选，项目名称。
-                description 'Making your avter to circleImage.'// 可选，项目描述。
-                url siteUrl // 项目主页，这里是引用上面定义好。
 
-                // 软件开源协议，现在一般都是Apache License2.0吧，复制我的，这里不需要修改。
+                name 'CircleImageView'
+                description 'Making your avter to circleImage.'
+                url siteUrl
+
                 licenses {
                     license {
                         name 'The Apache Software License, Version 2.0'
@@ -59,38 +58,34 @@ install {
                     }
                 }
 
-                //填写开发者基本信息，复制我的，这里需要修改。
                 developers {
                     developer {
-                        id 'GlossimarWanWan' // 开发者的id。
-                        name 'GlossimarWanWan' // 开发者名字。
-                        email 'glossimarsun@gmail.com' // 开发者邮箱。
+                        id 'GlossimarWanWan'
+                        name 'GlossimarWanWan'
+                        email 'glossimarsun@gmail.com'
                     }
                 }
 
-                // SCM，复制我的，这里不需要修改。
                 scm {
-                    connection gitUrl // Git仓库地址。
-                    developerConnection gitUrl // Git仓库地址。
-                    url siteUrl // 项目主页。
+                    connection gitUrl
+                    developerConnection gitUrl
+                    url siteUrl
                 }
             }
         }
     }
 }
-// 生成jar包的task，不需要修改。
+
 task sourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
     classifier = 'sources'
 }
-// 生成jarDoc的task，不需要修改。
 task javadoc(type: Javadoc) {
     source = android.sourceSets.main.java.srcDirs
     classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
-    // destinationDir = file("../javadoc/")
-    failOnError false // 忽略注释语法错误，如果用jdk1.8你的注释写的不规范就编译不过。
+    failOnError false
 }
-// 生成javaDoc的jar，不需要修改。
+
 task javadocJar(type: Jar, dependsOn: javadoc) {
     classifier = 'javadoc'
     from javadoc.destinationDir
@@ -109,7 +104,7 @@ bintray {
     pkg {
         repo = "maven"
         name = "CircleImageWan"
-        userOrg = 'GlossimarWanWan'
+        userOrg = 'glossimarwanwan'
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         licenses = ["Apache-2.0"]

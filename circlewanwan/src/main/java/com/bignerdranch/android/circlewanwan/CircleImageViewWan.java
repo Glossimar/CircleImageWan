@@ -1,4 +1,4 @@
-package com.bignerdranch.android.circleimagewan;
+package com.bignerdranch.android.circlewanwan;
 
 import android.content.Context;
 import android.content.res.TypedArray;
