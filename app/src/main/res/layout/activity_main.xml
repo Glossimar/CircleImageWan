@@ -15,7 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"/>
-    <com.bignerdranch.android.circleimagewan.CircleImageViewWan
+    <com.bignerdranch.android.circlewanwan.CircleImageViewWan
         android:layout_width="100dp"
         android:layout_height="100dp"
         app:BorderWith="3dp"

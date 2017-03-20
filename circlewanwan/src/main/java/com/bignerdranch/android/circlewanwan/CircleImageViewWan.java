@@ -22,7 +22,7 @@ import static android.content.ContentValues.TAG;
  * Created by LENOVO on 2017/3/16.
  */
 
-public class CircleImageViewWan extends ImageView {
+public class CircleImageViewWan extends android.support.v7.widget.AppCompatImageView {
 
     private int mBorderColor;
     private int mBorderWidth;
