@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/CircleImageWan.iml" filepath="$PROJECT_DIR$/CircleImageWan.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/circlewanwan/circlewanwan.iml" filepath="$PROJECT_DIR$/circlewanwan/circlewanwan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libwan/libwan.iml" filepath="$PROJECT_DIR$/libwan/libwan.iml" />
     </modules>
   </component>
 </project>

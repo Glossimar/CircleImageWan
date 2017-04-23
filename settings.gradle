@@ -1,1 +1,1 @@
-include ':app', ':circlewanwan'
+include ':app', ':circlewanwan', ':libwan'
