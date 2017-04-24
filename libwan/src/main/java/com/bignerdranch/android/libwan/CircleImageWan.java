@@ -24,7 +24,7 @@ import static android.content.ContentValues.TAG;
 
 public class CircleImageWan extends android.support.v7.widget.AppCompatImageView {
 
-    private static final String TAG = "CircleImageViewWan";
+    private static final String TAG = "CircleImageWan";
     private int mBorderColor;
     private int mBorderWidth;
     private boolean mChangeSize;
